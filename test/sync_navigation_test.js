@@ -1,4 +1,3 @@
-var assert = require('chai').assert;
 
 describe('Navigation', function() {
     describe('Shop Button', function() {
