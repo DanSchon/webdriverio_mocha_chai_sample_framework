@@ -6,9 +6,9 @@ class LoginPage {
   
   
   submitLoginForm(username, password) {
-    browser.setValue(this.usernameField, username);
-    browser.setValue(this.passwordField, password);
-    browser.click(this.loginButton);
+    if (username) { this.usernameField.setValue(username); }
+    if (password) { this.passwordField.setValue(password); }
+    this.loginButton.click();
   }  
   
 }
